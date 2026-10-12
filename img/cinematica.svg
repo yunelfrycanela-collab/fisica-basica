@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Automóvil desplazándose sobre una carretera con su vector velocidad">
+  <defs>
+    <linearGradient id="bgCin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eaf2ff"/>
+      <stop offset="1" stop-color="#d3e3ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bgCin)"/>
+
+  <!-- Carretera -->
+  <rect x="0" y="268" width="640" height="14" fill="#94a3b8"/>
+  <g stroke="#f8fafc" stroke-width="5" stroke-linecap="round">
+    <line x1="40" y1="275" x2="110" y2="275"/>
+    <line x1="170" y1="275" x2="240" y2="275"/>
+    <line x1="300" y1="275" x2="370" y2="275"/>
+    <line x1="430" y1="275" x2="500" y2="275"/>
+    <line x1="560" y1="275" x2="600" y2="275"/>
+  </g>
+
+  <!-- Marcas de posición -->
+  <g stroke="#1e40af" stroke-width="2" stroke-dasharray="4 5">
+    <line x1="120" y1="120" x2="120" y2="268"/>
+    <line x1="360" y1="120" x2="360" y2="268"/>
+  </g>
+
+  <!-- Automóvil -->
+  <g>
+    <rect x="130" y="188" width="180" height="52" rx="12" fill="#2563eb"/>
+    <path d="M170 190 L200 150 L270 150 L292 190 Z" fill="#1e40af"/>
+    <rect x="205" y="158" width="34" height="28" rx="5" fill="#bfdbfe"/>
+    <rect x="246" y="158" width="18" height="28" rx="5" fill="#bfdbfe"/>
+    <circle cx="176" cy="244" r="20" fill="#1f2937"/>
+    <circle cx="176" cy="244" r="9" fill="#cbd5e1"/>
+    <circle cx="272" cy="244" r="20" fill="#1f2937"/>
+    <circle cx="272" cy="244" r="9" fill="#cbd5e1"/>
+  </g>
+
+  <!-- Vector velocidad -->
+  <g stroke="#dc2626" stroke-width="5" fill="#dc2626">
+    <line x1="450" y1="118" x2="580" y2="118" stroke-linecap="round"/>
+    <polygon points="580,118 556,106 556,130"/>
+  </g>
+  <text x="470" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#dc2626">v</text>
+</svg>

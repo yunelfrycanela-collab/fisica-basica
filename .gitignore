@@ -1,0 +1,11 @@
+# Archivos que NO se suben al repositorio
+fisica-basica-web.zip
+
+# Sistema operativo
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editores
+.vscode/
+.idea/

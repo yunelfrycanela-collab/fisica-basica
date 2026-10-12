@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Física Básica | Guía de estudio</title>
+  <meta name="description" content="Página informativa sobre los temas fundamentales de la física básica: cinemática, dinámica, energía, termodinámica, ondas y electricidad." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== Encabezado ===== -->
+  <header class="header">
+    <div class="header__inner">
+      <div class="brand">
+        <span class="brand__logo" aria-hidden="true">⚛</span>
+        <div>
+          <h1 class="brand__title">Física Básica</h1>
+          <p class="brand__subtitle">Conceptos, fórmulas y temas fundamentales</p>
+        </div>
+      </div>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema">
+        <span id="themeIcon">🌙</span>
+      </button>
+    </div>
+
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#introduccion">Introducción</a>
+      <a href="#cinematica">Cinemática</a>
+      <a href="#dinamica">Dinámica</a>
+      <a href="#energia">Energía</a>
+      <a href="#termodinamica">Termodinámica</a>
+      <a href="#ondas">Ondas</a>
+      <a href="#electricidad">Electricidad</a>
+      <a href="#calculadora">Calculadora</a>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <!-- ===== Introducción ===== -->
+    <section id="introduccion" class="section hero">
+      <div class="hero__grid">
+        <div class="hero__text">
+          <h2 class="section__title">¿Qué es la Física?</h2>
+          <p class="lead">
+            La <strong>física</strong> es la ciencia que estudia la materia, la energía, el movimiento
+            y las fuerzas que actúan en el universo. Es una de las ciencias naturales más antiguas y
+            sirve de base para la química, la biología, la ingeniería y la astronomía.
+          </p>
+        </div>
+        <figure class="section__figure">
+          <img src="img/foto-portada.jpg"
+               alt="Laboratorio de física con un experimento láser y equipos ópticos"
+               onerror="this.onerror=null; this.src='img/atomo.svg';" />
+          <figcaption>Experimentación en un laboratorio de física. Imagen: Wikimedia Commons.</figcaption>
+        </figure>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="card">
+          <h3>Magnitudes básicas</h3>
+          <p>Toda medición física parte de magnitudes fundamentales del Sistema Internacional (SI):</p>
+          <ul class="list">
+            <li><strong>Longitud</strong> — metro (m)</li>
+            <li><strong>Masa</strong> — kilogramo (kg)</li>
+            <li><strong>Tiempo</strong> — segundo (s)</li>
+            <li><strong>Temperatura</strong> — kelvin (K)</li>
+            <li><strong>Intensidad de corriente</strong> — ampere (A)</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Método científico</h3>
+          <ol class="list list--ordered">
+            <li>Observación del fenómeno</li>
+            <li>Formulación de una hipótesis</li>
+            <li>Experimentación y medición</li>
+            <li>Análisis de resultados</li>
+            <li>Conclusión y leyes o teorías</li>
+          </ol>
+        </article>
+
+        <article class="card">
+          <h3>Ramas principales</h3>
+          <ul class="list">
+            <li><strong>Mecánica</strong> — movimiento y fuerzas</li>
+            <li><strong>Termodinámica</strong> — calor y energía</li>
+            <li><strong>Electromagnetismo</strong> — cargas y campos</li>
+            <li><strong>Óptica</strong> — luz y ondas</li>
+            <li><strong>Física moderna</strong> — cuántica y relatividad</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Cinemática ===== -->
+    <section id="cinematica" class="section">
+      <h2 class="section__title">Cinemática</h2>
+      <p class="lead">
+        La cinemática describe el movimiento de los cuerpos <em>sin</em> considerar las causas que
+        lo producen. Estudia posición, velocidad y aceleración.
+      </p>
+
+      <figure class="section__figure">
+        <img src="img/foto-cinematica.jpg"
+             alt="Automóviles circulando por una carretera"
+             loading="lazy"
+             onerror="this.onerror=null; this.src='img/cinematica.svg';" />
+        <figcaption>El movimiento de un cuerpo se describe con posición, velocidad y aceleración.</figcaption>
+      </figure>
+
+      <div class="grid grid--2">
+        <article class="card">
+          <h3>Movimiento Rectilíneo Uniforme (MRU)</h3>
+          <p>Velocidad constante, aceleración nula.</p>
+          <p class="formula">v = d / t</p>
+          <p class="formula">d = v · t</p>
+          <p class="note">Donde <strong>v</strong> = velocidad, <strong>d</strong> = distancia, <strong>t</strong> = tiempo.</p>
+        </article>
+
+        <article class="card">
+          <h3>Movimiento Uniformemente Acelerado (MRUA)</h3>
+          <p>Aceleración constante en el tiempo.</p>
+          <p class="formula">v<sub>f</sub> = v<sub>i</sub> + a · t</p>
+          <p class="formula">d = v<sub>i</sub> · t + ½ · a · t²</p>
+          <p class="formula">v<sub>f</sub>² = v<sub>i</sub>² + 2 · a · d</p>
+          <p class="note">Donde <strong>a</strong> = aceleración, <strong>v<sub>i</sub></strong> = velocidad inicial, <strong>v<sub>f</sub></strong> = velocidad final.</p>
+        </article>
+      </div>
+
+      <article class="card card--wide">
+        <h3>Conceptos clave</h3>
+        <table class="table">
+          <thead>
+            <tr><th>Magnitud</th><th>Símbolo</th><th>Unidad (SI)</th><th>Descripción</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Posición</td><td>x</td><td>metro (m)</td><td>Ubicación respecto a un punto de referencia</td></tr>
+            <tr><td>Desplazamiento</td><td>Δx</td><td>metro (m)</td><td>Cambio de posición</td></tr>
+            <tr><td>Velocidad</td><td>v</td><td>m/s</td><td>Cambio de posición por unidad de tiempo</td></tr>
+            <tr><td>Aceleración</td><td>a</td><td>m/s²</td><td>Cambio de velocidad por unidad de tiempo</td></tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+
+    <!-- ===== Dinámica ===== -->
+    <section id="dinamica" class="section section--alt">
+      <h2 class="section__title">Dinámica — Leyes de Newton</h2>
+      <p class="lead">
+        La dinámica estudia las causas del movimiento: las <strong>fuerzas</strong>. Isaac Newton
+        resumió sus principios en tres leyes fundamentales.
+      </p>
+
+      <figure class="section__figure">
+        <img src="img/foto-dinamica.gif"
+             alt="Péndulo de Newton en movimiento ilustrando las fuerzas y la cantidad de movimiento"
+             loading="lazy"
+             onerror="this.onerror=null; this.src='img/dinamica.svg';" />
+        <figcaption>El péndulo de Newton ilustra la conservación del momento y las leyes de Newton.</figcaption>
+      </figure>
+
+      <div class="grid grid--3">
+        <article class="card">
+          <h3>1ª Ley — Inercia</h3>
+          <p>Un cuerpo permanece en reposo o en movimiento rectilíneo uniforme si la fuerza neta sobre él es cero.</p>
+          <p class="formula">ΣF = 0</p>
+        </article>
+
+        <article class="card">
+          <h3>2ª Ley — Fuerza y aceleración</h3>
+          <p>La fuerza neta es proporcional a la masa y a la aceleración.</p>
+          <p class="formula">F = m · a</p>
+          <p class="note">Unidad de fuerza: <strong>newton (N)</strong> = kg·m/s².</p>
+        </article>
+
+        <article class="card">
+          <h3>3ª Ley — Acción y reacción</h3>
+          <p>A toda acción corresponde una reacción de igual magnitud y dirección opuesta.</p>
+          <p class="formula">F₁→₂ = − F₂→₁</p>
+        </article>
+      </div>
+
+      <article class="card card--wide">
+        <h3>Fuerzas comunes</h3>
+        <ul class="list list--cols">
+          <li><strong>Peso:</strong> W = m · g &nbsp;(g ≈ 9.8 m/s²)</li>
+          <li><strong>Fuerza de rozamiento:</strong> f = μ · N</li>
+          <li><strong>Fuerza elástica (Ley de Hooke):</strong> F = − k · x</li>
+          <li><strong>Fuerza gravitatoria:</strong> F = G · m₁ · m₂ / d²</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- ===== Energía ===== -->
+    <section id="energia" class="section">
+      <h2 class="section__title">Trabajo, Energía y Potencia</h2>
+      <p class="lead">
+        La energía es la capacidad de un cuerpo para realizar trabajo. Se conserva: no se crea ni
+        se destruye, solo se transforma.
+      </p>
+
+      <figure class="section__figure">
+        <img src="img/foto-energia.jpg"
+             alt="Vías de una montaña rusa"
+             loading="lazy"
+             onerror="this.onerror=null; this.src='img/energia.svg';" />
+        <figcaption>En una montaña rusa, la energía potencial se transforma en cinética y viceversa.</figcaption>
+      </figure>
+
+      <div class="grid grid--3">
+        <article class="card">
+          <h3>Trabajo</h3>
+          <p class="formula">W = F · d · cos θ</p>
+          <p class="note">Se mide en <strong>joules (J)</strong>.</p>
+        </article>
+
+        <article class="card">
+          <h3>Energía cinética</h3>
+          <p>Energía asociada al movimiento.</p>
+          <p class="formula">E<sub>c</sub> = ½ · m · v²</p>
+        </article>
+
+        <article class="card">
+          <h3>Energía potencial gravitatoria</h3>
+          <p>Energía asociada a la altura.</p>
+          <p class="formula">E<sub>p</sub> = m · g · h</p>
+        </article>
+      </div>
+
+      <div class="grid grid--2">
+        <article class="card">
+          <h3>Conservación de la energía mecánica</h3>
+          <p>Sin rozamiento, la energía mecánica total se mantiene constante.</p>
+          <p class="formula">E<sub>c</sub> + E<sub>p</sub> = constante</p>
+        </article>
+
+        <article class="card">
+          <h3>Potencia</h3>
+          <p>Rapidez con que se realiza un trabajo.</p>
+          <p class="formula">P = W / t</p>
+          <p class="note">Se mide en <strong>watts (W)</strong>.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Termodinámica ===== -->
+    <section id="termodinamica" class="section section--alt">
+      <h2 class="section__title">Termodinámica</h2>
+      <p class="lead">
+        Estudia el calor, la temperatura y las transformaciones de la energía en los sistemas.
+      </p>
+
+      <figure class="section__figure">
+        <img src="img/foto-termodinamica.jpg"
+             alt="Termómetros de mercurio e infrarrojo"
+             loading="lazy"
+             onerror="this.onerror=null; this.src='img/termodinamica.svg';" />
+        <figcaption>Distintos tipos de termómetros: de mercurio e infrarrojo.</figcaption>
+      </figure>
+
+      <div class="grid grid--2">
+        <article class="card">
+          <h3>Leyes de la termodinámica</h3>
+          <ul class="list list--ordered">
+            <li><strong>Ley cero:</strong> equilibrio térmico entre sistemas.</li>
+            <li><strong>1ª Ley:</strong> la energía se conserva (calor = trabajo + variación de energía interna).</li>
+            <li><strong>2ª Ley:</strong> la entropía de un sistema aislado tiende a aumentar.</li>
+            <li><strong>3ª Ley:</strong> es imposible alcanzar el cero absoluto.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Fórmulas esenciales</h3>
+          <p class="formula">Q = m · c · ΔT</p>
+          <p class="note">Calor absorbido o cedido.</p>
+          <p class="formula">T(K) = T(°C) + 273.15</p>
+          <p class="note">Conversión de temperatura Celsius a Kelvin.</p>
+          <p class="formula">ΔU = Q − W</p>
+          <p class="note">Primera ley de la termodinámica.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Ondas ===== -->
+    <section id="ondas" class="section">
+      <h2 class="section__title">Ondas y Sonido</h2>
+      <p class="lead">
+        Una onda es una perturbación que se propaga transportando energía, sin transportar materia.
+      </p>
+
+      <figure class="section__figure">
+        <img src="img/foto-ondas.jpg"
+             alt="Ondas en la superficie del agua"
+             loading="lazy"
+             onerror="this.onerror=null; this.src='img/ondas.svg';" />
+        <figcaption>Las ondas en el agua son un ejemplo cotidiano de onda mecánica.</figcaption>
+      </figure>
+
+      <div class="grid grid--2">
+        <article class="card">
+          <h3>Ecuación fundamental de las ondas</h3>
+          <p class="formula">v = λ · f</p>
+          <p class="note">Donde <strong>λ</strong> = longitud de onda, <strong>f</strong> = frecuencia, <strong>v</strong> = velocidad.</p>
+          <p class="formula">T = 1 / f</p>
+          <p class="note"><strong>T</strong> = periodo.</p>
+        </article>
+
+        <article class="card">
+          <h3>Tipos de ondas</h3>
+          <ul class="list">
+            <li><strong>Mecánicas:</strong> necesitan medio material (sonido).</li>
+            <li><strong>Electromagnéticas:</strong> se propagan en el vacío (luz).</li>
+            <li><strong>Transversales:</strong> vibración perpendicular a la propagación.</li>
+            <li><strong>Longitudinales:</strong> vibración en la misma dirección.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Electricidad ===== -->
+    <section id="electricidad" class="section section--alt">
+      <h2 class="section__title">Electricidad y Magnetismo</h2>
+      <p class="lead">
+        Estudia las cargas eléctricas, las corrientes y los campos magnéticos, así como su
+        interacción.
+      </p>
+
+      <figure class="section__figure">
+        <img src="img/foto-electricidad.jpg"
+             alt="Placa de circuito impreso con componentes electrónicos"
+             loading="lazy"
+             onerror="this.onerror=null; this.src='img/electricidad.svg';" />
+        <figcaption>Circuitos reales: componentes electrónicos montados sobre una placa.</figcaption>
+      </figure>
+
+      <div class="grid grid--3">
+        <article class="card">
+          <h3>Ley de Ohm</h3>
+          <p class="formula">V = I · R</p>
+          <p class="note"><strong>V</strong> voltaje (V), <strong>I</strong> corriente (A), <strong>R</strong> resistencia (Ω).</p>
+        </article>
+
+        <article class="card">
+          <h3>Potencia eléctrica</h3>
+          <p class="formula">P = V · I</p>
+          <p class="formula">P = I² · R</p>
+        </article>
+
+        <article class="card">
+          <h3>Ley de Coulomb</h3>
+          <p>Fuerza entre dos cargas puntuales.</p>
+          <p class="formula">F = k · q₁ · q₂ / d²</p>
+          <p class="note">k ≈ 9 × 10⁹ N·m²/C².</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Calculadora ===== -->
+    <section id="calculadora" class="section">
+      <h2 class="section__title">Calculadora rápida de fórmulas</h2>
+      <p class="lead">Elige una fórmula, ingresa los valores y obtén el resultado al instante.</p>
+
+      <div class="calculator">
+        <div class="calculator__row">
+          <label for="formulaSelect">Fórmula</label>
+          <select id="formulaSelect">
+            <option value="mru">MRU: Velocidad = distancia / tiempo</option>
+            <option value="newton">2ª Ley de Newton: Fuerza = masa × aceleración</option>
+            <option value="cinetica">Energía cinética: Ec = ½ · m · v²</option>
+            <option value="potencial">Energía potencial: Ep = m · g · h</option>
+            <option value="ohm">Ley de Ohm: Voltaje = corriente × resistencia</option>
+            <option value="onda">Ondas: Velocidad = longitud de onda × frecuencia</option>
+          </select>
+        </div>
+
+        <div class="calculator__inputs" id="calcInputs"></div>
+
+        <div class="calculator__result">
+          <button class="btn" id="calcBtn" type="button">Calcular</button>
+          <output id="calcOutput" class="output">Resultado: —</output>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Página educativa de <strong>Física Básica</strong> · Creada como material de estudio.</p>
+    <p class="footer__small">Los valores usan el Sistema Internacional (SI). Gravedad g ≈ 9.8 m/s².</p>
+    <p class="footer__small">Imágenes: Wikimedia Commons (contenido de uso libre), descargadas localmente en la carpeta <code>img/</code>.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

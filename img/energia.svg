@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Péndulo oscilando que muestra la conversión entre energía potencial y cinética">
+  <defs>
+    <linearGradient id="bgEne" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eaf2ff"/>
+      <stop offset="1" stop-color="#d3e3ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bgEne)"/>
+
+  <!-- Techo -->
+  <rect x="80" y="40" width="480" height="14" rx="4" fill="#94a3b8"/>
+  <g stroke="#64748b" stroke-width="2">
+    <line x1="110" y1="40" x2="90" y2="14"/>
+    <line x1="200" y1="40" x2="180" y2="14"/>
+    <line x1="290" y1="40" x2="270" y2="14"/>
+    <line x1="380" y1="40" x2="360" y2="14"/>
+    <line x1="470" y1="40" x2="450" y2="14"/>
+    <line x1="540" y1="40" x2="520" y2="14"/>
+  </g>
+
+  <!-- Trayectoria -->
+  <path d="M210 250 Q320 340 430 250" fill="none" stroke="#94a3b8" stroke-width="3" stroke-dasharray="7 7"/>
+
+  <!-- Posición inicial (energía potencial) -->
+  <line x1="320" y1="54" x2="210" y2="250" stroke="#1e40af" stroke-width="3"/>
+  <circle cx="210" cy="250" r="24" fill="#7c3aed"/>
+  <text x="120" y="215" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#7c3aed">Ep máx</text>
+
+  <!-- Posición inferior (energía cinética) -->
+  <line x1="320" y1="54" x2="320" y2="300" stroke="#1e40af" stroke-width="3" stroke-dasharray="6 6" opacity="0.6"/>
+  <circle cx="320" cy="300" r="24" fill="#0ea5e9" opacity="0.55"/>
+  <text x="250" y="345" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#0ea5e9">Ec máx</text>
+
+  <!-- Posición final -->
+  <line x1="320" y1="54" x2="430" y2="250" stroke="#1e40af" stroke-width="3" opacity="0.6"/>
+  <circle cx="430" cy="250" r="24" fill="#7c3aed" opacity="0.5"/>
+
+  <!-- Pivote -->
+  <circle cx="320" cy="54" r="9" fill="#1e293b"/>
+</svg>
